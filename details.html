@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <script
+      src="https://kit.fontawesome.com/ab74219e0f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Launch details</title>
+  </head>
+  <body>
+    <header class="mobile-menu">
+      <a href="./index.html"
+        ><img class="logo" src="./img/logo.png" alt="Logo"
+      /></a>
+      <!-- Navigation links (hidden by default) -->
+      <div class="link-items">
+        <a onClick="toggleNavbar()" href="./launches.html">Launches</a>
+        <a onClick="toggleNavbar()" href="./contact.html">Contact</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </header>
+    <header class="large-menu">
+      <nav>
+        <ul>
+          <a href="./index.html"
+            ><img class="logo" src="./img/logo.png" alt="Logo"
+          /></a>
+          <li class="nav-item"><a href="./launches.html">Launches</a></li>
+          <li class="nav-item"><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="header">Details</h1>
+      <div class="container">
+        <div class="timeline-container">
+          <i class="far fa-sun fa-spin fa-5x"></i>
+        </div>
+      </div>
+    </main>
+    <script src="./js/details.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
